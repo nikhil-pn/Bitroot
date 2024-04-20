@@ -7,6 +7,11 @@ from fastapi.responses import StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 from decouple import config
 import openai
+from pydantic import BaseModel
+
+class Message(BaseModel):
+    message: str
+
 
 
 # Custom function imports
@@ -58,6 +63,7 @@ async def reset_conversation():
 
 
 @app.post("/chat/")
-async def chat(input_text: str):
-    response = get_chat_response(input_text)
+async def chat(message: Message):
+    response = get_chat_response(message.message)
     return {"response": response}
+
