@@ -1,0 +1,43 @@
+{
+    "intents" : [
+        {
+            "tag" : "greeting",
+            "patterns" : [
+                "Hi", 
+                "Hello", 
+                "Hey", 
+                "Hola", 
+                "Howdy", 
+                "Greetings", 
+                "Good to see you"
+            ],
+            "responses" : [
+                "Hey Sir!",  
+                "Howdy!", 
+                "what can i do for you?", 
+                "Good to see you!"
+            ]
+        },
+        {
+            "tag": "name",
+            "patterns": [
+                "What is your name?", 
+                "What should I call you?", 
+                "Who are you?"
+            ],
+            "responses": [
+                "You can call me Bitroot.", 
+                "I'm Bitroot, the wise parrot", 
+                "I'm Bitroot, the zo House guide."
+            ]
+        },
+        {
+            "tag": "file",
+            "patterns": [
+                "create a file",
+                "create new file"
+            ],
+            "responses": []
+        }
+    ]
+}
