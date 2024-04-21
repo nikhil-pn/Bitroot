@@ -6,3 +6,6 @@ pip3 install python-decouple==3.8 python-multipart==0.0.6 requests==2.28.2 fasta
 
 pip3 install "uvicorn[standard]"
 uvicorn main:app --reload
+
+
+pip freeze > requirements.txt

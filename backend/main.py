@@ -29,10 +29,10 @@ app = FastAPI()
 
 
 # CORS - Origins
+
 origins = [
-    "http://localhost:5173",
-    "http://localhost:5174",
-    "http://localhost:4173",
+    "http://www.cryptoswami.in",
+    "http://localhost:3002",
     "http://localhost:3000",
 ]
 
